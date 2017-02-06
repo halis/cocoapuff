@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+it('Should ', () => {
+    expect(${1:fn}()).to.equal();
+});
+]]></content>
+    <tabTrigger>it</tabTrigger>
+    <scope>source.js, source.ts, source.jsx</scope>
+    <description>Mocha It Snippet</description>
+</snippet>
+

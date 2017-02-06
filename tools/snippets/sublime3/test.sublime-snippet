@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+
+import { expect } from 'chai';
+
+import { ${1:fn} } from '${2:path}';
+
+describe('${2:path}', () => {
+    context('#${1:fn}()', () => {
+        it('Should ', () => {
+            expect(${1:fn}()).to.equal();
+        });
+    });
+});
+
+]]></content>
+    <tabTrigger>test</tabTrigger>
+    <scope>source.js, source.ts, source.jsx</scope>
+    <description>Mocha Unit Test Snippet</description>
+</snippet>
+

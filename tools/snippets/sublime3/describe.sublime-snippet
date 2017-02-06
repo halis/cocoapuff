@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+
+describe('${1:path}', () => {
+    context('#${2:fn}()', () => {
+        it('Should ', () => {
+            expect(${2:fn}()).to.equal();
+        });
+    });
+});
+
+]]></content>
+    <tabTrigger>describe</tabTrigger>
+    <scope>source.js, source.ts, source.jsx</scope>
+    <description>Mocha Describe Snippet</description>
+</snippet>
+

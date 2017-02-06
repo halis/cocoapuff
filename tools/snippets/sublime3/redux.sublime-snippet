@@ -1,0 +1,41 @@
+<snippet>
+    <content><![CDATA[
+
+import React from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+
+import { ${1:actions} } from 'actions/sync/${2:actionsName}';
+
+export default class ${3:name} extends React.Component {
+    isNull() {
+        return false;
+    }
+
+    render() {
+        if (this.isNull()) {
+            return null;
+        }
+
+        const { ${4:props} } = this.props;
+        return (
+
+        );
+    }
+}
+
+const mapStateToProps = (state, ownProps) => ({
+    ${5:mapStateToProps}
+});
+
+const mapDispatchToProps = (dispatch) => (bindActionCreators({
+    ${6:mapDispatchToProps}
+}, dispatch));
+
+export default connect(mapStateToProps, mapDispatchToProps)(${3:name});
+
+]]></content>
+    <tabTrigger>redux</tabTrigger>
+    <scope>source.js, source.ts, source.jsx</scope>
+    <description>Redux Connected Component Snippet</description>
+</snippet>

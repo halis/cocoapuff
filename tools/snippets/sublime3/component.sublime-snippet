@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+
+import React from 'react';
+
+export default class ${1:name} extends React.Component {
+    isNull() {
+        return false;
+    }
+
+    render() {
+        if (this.isNull()) {
+            return null;
+        }
+
+        const { ${2:props} } = this.props;
+        return (
+
+        );
+    }
+}
+
+]]></content>
+    <tabTrigger>component</tabTrigger>
+    <scope>source.js, source.ts, source.jsx</scope>
+    <description>React Component Snippet</description>
+</snippet>
