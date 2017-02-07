@@ -1,24 +1,23 @@
 <snippet>
     <content><![CDATA[
 
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 export default class ${1:name} extends React.Component {
-    isNull() {
-        return false;
-    }
-
     render() {
-        if (this.isNull()) {
-            return null;
-        }
-
         const { ${2:props} } = this.props;
         return (
 
         );
     }
 }
+
+${1:name}.propTypes = {
+
+};
+${1:name}.defaultProps = {
+
+};
 
 ]]></content>
     <tabTrigger>component</tabTrigger>
