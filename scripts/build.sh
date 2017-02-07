@@ -4,4 +4,5 @@ npm run lint \
 && npm run flow \
 && npm run lines \
 && npm run cover \
-&& npm run bundle;
+&& npm run bundle \
+&& echo && echo Node Version $(node --version) && echo;
