@@ -21,8 +21,8 @@
     "check": "npm outdated && nsp check && depcheck && retire",
     "dbuild": "npm run bundle && docker build -t cocoapuff .",
     "drun": "docker run --name cocoapuff -d -p 3000:3000 cocoapuff",
-    "drm": "docker stop cocoapuff && docker rm cocoapuff",
-    "drmi": "docker rmi cocoapuff",
+    "dup": "docker start cocoapuff",
+    "ddown": "docker stop cocoapuff && docker rm cocoapuff",
     "dexec": "docker exec -ti cocoapuff /bin/sh"
   },
   "repository": {
