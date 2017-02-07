@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[
 context('#${1:fn}()', () => {
-    it('Should ', () => {
-        expect(${1:fn}()).to.equal();
-    });
+  it('Should ', () => {
+    expect(${1:fn}()).to.equal();
+  });
 });
 ]]></content>
     <tabTrigger>context</tabTrigger>

@@ -9,24 +9,24 @@ import { ${1:actionType} } from 'actions/types';
 import reducer, { getDefaultState } from 'reducers/${2:name}';
 
 describe('reducers/${2:name}', () => {
-    context(${1:actionType}, () => {
-        let action = {
-            type: ${1:actionType},
-            data: {
+  context(${1:actionType}, () => {
+    let action = {
+      type: ${1:actionType},
+      data: {
 
-            },
-        };
-        it('Should ', () => {
-            let result = reducer(undefined, { type: ${1:actionType}, data: null });
-            let expected = getDefaultState();
-            expect(result).to.deep.equal(expected);
-        });
-        it('Should', () => {
-            let result = reducer(undefined, action);
-            let expected = Object.assign({}, getDefaultState(), action.data);
-            expect(result).to.deep.equal(expected);
-        });
+      },
+    };
+    it('Should ', () => {
+      let result = reducer(undefined, { type: ${1:actionType}, data: null });
+      let expected = getDefaultState();
+      expect(result).to.deep.equal(expected);
     });
+    it('Should', () => {
+      let result = reducer(undefined, action);
+      let expected = Object.assign({}, getDefaultState(), action.data);
+      expect(result).to.deep.equal(expected);
+    });
+  });
 });
 
 ]]></content>

@@ -8,12 +8,12 @@ import { connect } from 'react-redux';
 import { ${1:actions} } from 'actions/sync/${2:actionsName}';
 
 export default class ${3:name} extends React.Component {
-    render() {
-        const { ${4:props} } = this.props;
-        return (
+  render() {
+    const { ${4:props} } = this.props;
+    return (
 
-        );
-    }
+    );
+  }
 }
 
 ${3:name}.propTypes = {
@@ -24,11 +24,11 @@ ${3:name}.defaultProps = {
 };
 
 const mapStateToProps = (state, ownProps) => ({
-    ${5:mapStateToProps}
+  ${5:mapStateToProps}
 });
 
 const mapDispatchToProps = (dispatch) => (bindActionCreators({
-    ${6:mapDispatchToProps}
+  ${6:mapDispatchToProps}
 }, dispatch));
 
 export default connect(mapStateToProps, mapDispatchToProps)(${3:name});

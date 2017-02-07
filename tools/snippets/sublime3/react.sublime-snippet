@@ -8,24 +8,24 @@ import { mount } from 'enzyme';
 import ${1:name} from 'components/${2:path}/${1:name}';
 
 describe.only('components/${2:path}/${1:name}', () => {
-    context('#render()', () => {
-        const opts = {
+  context('#render()', () => {
+    const opts = {
 
-        };
-        const el = mount(<${1:name} { ...opts } />);
+    };
+    const el = mount(<${1:name} { ...opts } />);
 
-        it('Does not throw an exception when rendered', () => {
-            expect(() => mount(<${1:name} />)).to.not.throw(Error);
-        });
-        it('Render returns null if props are wrong', () => {
-            expect(mount(<${1:name} />).html()).to.equal(null);
-        });
-        it('Contains the expected elements', () => {
-            expect(el.find('').length).to.equal(1);
-            expect(el.find('').length).to.equal(1);
-            expect(el.find('').length).to.equal(1);
-        });
+    it('Does not throw an exception when rendered', () => {
+      expect(() => mount(<${1:name} />)).to.not.throw(Error);
     });
+    it('Render returns null if props are wrong', () => {
+      expect(mount(<${1:name} />).html()).to.equal(null);
+    });
+    it('Contains the expected elements', () => {
+      expect(el.find('').length).to.equal(1);
+      expect(el.find('').length).to.equal(1);
+      expect(el.find('').length).to.equal(1);
+    });
+  });
 });
 
 ]]></content>

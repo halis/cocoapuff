@@ -13,7 +13,7 @@ import appReducer from "reducers/";
 import App from "components/App";
 
 const rootReducer = (state, action) => {
-    return appReducer(state, action);
+  return appReducer(state, action);
 };
 
 const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
@@ -22,17 +22,17 @@ const store = createStore(rootReducer, reduxDevTools, middleware);
 const history = syncHistoryWithStore(browserHistory, store);
 
 render(
-    <Provider store={ store }>
-        <Router history={ history }>
-            <Route path="/" component={ App }>
-                <IndexRoute component={ App } />
-            </Route>
-            <Route path="*" component={ App }>
-                <IndexRoute component={ App } />
-            </Route>
-        </Router>
-    </Provider>,
-    document.getElementById("main")
+  <Provider store={ store }>
+    <Router history={ history }>
+      <Route path="/" component={ App }>
+        <IndexRoute component={ App } />
+      </Route>
+      <Route path="*" component={ App }>
+        <IndexRoute component={ App } />
+      </Route>
+    </Router>
+  </Provider>,
+  document.getElementById("main")
 );
 
 ]]></content>

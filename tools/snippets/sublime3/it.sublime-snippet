@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 it('Should ', () => {
-    expect(${1:fn}()).to.equal();
+  expect(${1:fn}()).to.equal();
 });
 ]]></content>
     <tabTrigger>it</tabTrigger>

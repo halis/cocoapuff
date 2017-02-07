@@ -2,11 +2,11 @@
     <content><![CDATA[
 
 describe('${1:path}', () => {
-    context('#${2:fn}()', () => {
-        it('Should ', () => {
-            expect(${2:fn}()).to.equal();
-        });
+  context('#${2:fn}()', () => {
+    it('Should ', () => {
+      expect(${2:fn}()).to.equal();
     });
+  });
 });
 
 ]]></content>
