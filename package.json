@@ -15,7 +15,6 @@
     "compile": "./scripts/compile.sh",
     "build": "./scripts/build.sh",
     "snippets": "./scripts/snippets.sh",
-    "precommit": "npm run compile",
     "prepush": "npm run compile",
     "check": "npm outdated && nsp check && depcheck && retire",
     "dbuild": "npm run bundle && docker build -t cocoapuff .",
