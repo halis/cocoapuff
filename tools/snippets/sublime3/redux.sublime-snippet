@@ -5,7 +5,7 @@ import React, { PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { ${1:actions} } from 'actions/sync/${2:actionsName}';
+import { ${1:actions} } from 'ui/actions/sync/${2:actionsName}';
 
 export default class ${3:name} extends React.Component {
   render() {

@@ -14,7 +14,7 @@ WORKDIR /usr/local/cocoapuff
 COPY package.json package.json
 RUN npm install
 
-COPY ./config/server ./config/server
+COPY ./src/server ./src/server
 COPY ./public ./public
 COPY ./scripts/start.sh ./scripts/start.sh
 COPY ./package.json ./package.json
