@@ -9,8 +9,8 @@ import thunkMiddleware from "redux-thunk";
 import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import { syncHistoryWithStore } from "react-router-redux";
 
-import appReducer from "reducers/";
-import App from "components/App";
+import appReducer from "ui/reducers/index";
+import App from "ui/components/App";
 
 const rootReducer = (state, action) => {
   return appReducer(state, action);

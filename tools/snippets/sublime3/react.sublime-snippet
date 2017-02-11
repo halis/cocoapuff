@@ -5,9 +5,9 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 
-import ${1:name} from 'components/${2:path}/${1:name}';
+import ${1:name} from 'ui/components/${2:path}/${1:name}';
 
-describe.only('components/${2:path}/${1:name}', () => {
+describe.only('ui/components/${2:path}/${1:name}', () => {
   context('#render()', () => {
     const opts = {
 

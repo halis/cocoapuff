@@ -9,8 +9,9 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import thunkMiddleware from 'redux-thunk';
 
-import appReducer from 'reducers/';
-import App from 'components/App';
+import appReducer from 'ui/reducers/index';
+import App from 'ui/components/App';
+import About from 'ui/components/About';
 
 const rootReducer = (state, action) => appReducer(state, action);
 
@@ -24,6 +25,7 @@ render(
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={App} />
+        <Route path="About" component={About} />
       </Route>
       <Route path="*" component={App}>
         <IndexRoute component={App} />
