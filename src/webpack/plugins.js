@@ -11,6 +11,7 @@ module.exports = (env) => {
       filename: 'index.html',
       template: 'templates/html/index.html'
     }),
+    new webpack.optimize.DedupePlugin()
   ];
 
   if (env.NODE_MINIFY) {
