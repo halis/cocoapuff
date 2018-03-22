@@ -1,6 +1,6 @@
 
 const chalk = require('chalk');
-const curry = require('ramda').curry;
+const { curry } = require('ramda');
 
 const log = curry((color, string) => console.info(color(string)));
 
